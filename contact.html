@@ -5,117 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Document</title>
 </head>
-
-<style>
-    body {
-        font-family: Georgia, 'Times New Roman', Times, Times New Roman, serif;
-        background-color: #C2C2C2;
-        margin: 0
-    }
-
-    .navbar {
-        position: relative;
-        height: 70px;
-        background-color: #ffffff;
-    }
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        display: inline;
-    }
-
-    li a {
-        text-decoration: none;
-    }
-
-    .left-side {
-        float: left;
-        margin-left: 22%;
-        padding: 20px;
-        background-color: #4aaaa5;
-        color: #ffffff;
-        font-size: 26px;
-    }
-
-    .right-side {
-        display: flex;
-        float: right;
-        margin-right: 21%;
-    }
-
-    .right-side li {
-        padding: 24px 16px
-    }
-
-    .title {
-        padding-top: 2%;
-        border-bottom: 3px solid #dddddd;
-        color: #4aaaa5
-    }
-
-    .container {
-        flex-direction: column;
-        padding: 0% 2% 6% 2%;
-        background-color: #ffffff;
-        margin-left: 22%;
-        margin-right: 22%;
-        margin-top: 5%
-    }
-
-    .submit-form {
-        flex-direction: column;
-    }
-
-    .form-item {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 2%;
-    }
-
-    .form-item input {
-        padding: 8px
-    }
-
-    .form-item label {
-        font-weight: 300;
-        font-size: 20px;
-    }
-
-    textarea {
-        height: 200px;
-        border-color: #C2C2C2
-    }
-
-    button {
-        float: left;
-        border: none;
-        padding: 10px 24px 10px 24px;
-        background-color: #4aaaa5;
-        font-size: 16px;
-        font-weight: 700;
-        color: #ffffff
-    }
-
-    .footer {
-        position: absolute;
-        /* display: flex; */
-        background-color: red;
-        text-align: center;
-        align-content: stretch;
-        align-items: center;
-        height: 70px;
-        bottom: 0;
-        padding-left: 95vw
-    }
-</style>
 
 <body>
     <section>
@@ -123,44 +15,45 @@
             <ul class="navbar">
                 <li class="left-side">David Garza</li>
                 <div class="right-side">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </div>
-
             </ul>
         </nav>
     </section>
     <section>
-        <div class="container">
-            <div class="title">
-                <h1>Contact</h1>
-            </div>
-            <br>
-            <form action="submitContact">
-                <div class="submit-form">
-                    <div class="form-item">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="John Smith">
-                    </div>
-                    <div class="form-item">
-                        <label for="Email">Email</label>
-                        <input type="email" id="email" placeholder="example@gmail.com">
-                    </div>
-                    <div class="form-item">
-                        <label for="Message">Message</label>
-                        <textarea type="text" id="name" placeholder="...message">
-                    </textarea>
-                    </div>
-                    <button class="#" type="button">Submit</button>
+        <div class="wrapper">
+            <div class="container">
+                <div class="title">
+                    <h1>Contact</h1>
                 </div>
-            </form>
+                <br>
+                <form action="submitContact">
+                    <div class="submit-form">
+                        <div class="form-item">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="John Smith">
+                        </div>
+                        <div class="form-item">
+                            <label for="Email">Email</label>
+                            <input type="email" id="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="form-item">
+                            <label for="Message">Message</label>
+                            <textarea type="text" id="name" placeholder="...message">
+                    </textarea>
+                        </div>
+                        <button class="#" type="button">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
     <section>
         <div class="footer">
-            Contact Me
+            <h4>Copyright</h4>
         </div>
     </section>
 </body>
