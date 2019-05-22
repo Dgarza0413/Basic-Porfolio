@@ -1,6 +1,7 @@
 html {
-    height: 100%;
-}
+        height: 100%;
+    }
+
 body {
         font-family: Georgia, 'Times New Roman', Times, Times New Roman, serif;
         display: flex;
@@ -11,7 +12,6 @@ body {
     }
 
     .navbar {
-        position: relative;
         height: 70px;
         background-color: #ffffff;
     }
@@ -64,12 +64,9 @@ body {
 
     .container {
         flex-direction: column;
+        margin: 5% 22% 5% 22%;
         padding: 0% 2% 6% 2%;
         background-color: #ffffff;
-        margin-left: 22%;
-        margin-right: 22%;
-        margin-top: 5%;
-        margin-bottom: 5%;
     }
 
     .wrapper {
@@ -119,6 +116,8 @@ body {
         color: white;
         text-align: center;
     }
+
+    /* PORTFOLIO portion */
 
     .flex-container {   
         display: flex;
